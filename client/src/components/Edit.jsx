@@ -46,7 +46,7 @@ export default function Edit() {
   console.log(id);
 
   const getdata = async (e) => {
-    const res = await fetch(`/getuser/${id}`, {
+    const res = await fetch(`http://localhost:8000/getuser/${id}`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -72,7 +72,7 @@ export default function Edit() {
   const updateuser = async(e) => {
     const {name,age,work,email,mobile,add,desc} = intvalue;
     e.preventDefault();
-    const res2 = await fetch(`/updateuser/${id}`,{
+    const res2 = await fetch(`http://localhost:8000/updateuser/${id}`,{
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",

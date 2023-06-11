@@ -45,7 +45,7 @@ export default function Detail() {
 
 
   const deleteuser = async(id) =>{
-    const res2 = await fetch(`/deleteuser/${id}`,{
+    const res2 = await fetch(`http://localhost:8000/deleteuser/${id}`,{
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",

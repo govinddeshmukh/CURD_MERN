@@ -15,7 +15,7 @@ export default function Home() {
   const { deldata, setdeldata } = useContext(Deletedata);
   console.log(getuserdata);
   const getdata = async (e) => {
-    const res = await fetch("/getdata", {
+    const res = await fetch("http://localhost:8000/getdata", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

@@ -31,7 +31,7 @@ export default function Register() {
   const adddata = async (e) => {
     e.preventDefault()
     const {name,age,work,email,mobile,add,desc} = inptvalue;
-    const res = await fetch("/register",{
+    const res = await fetch("http://localhost:8000/register",{
       method:"POST",
       headers:{
         "Content-Type":"application/json"
